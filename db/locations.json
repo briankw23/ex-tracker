@@ -1,0 +1,40 @@
+{
+  "locations": [
+      {
+          "name": "Starbucks",
+          "address": "1 Terminal Dr #325, Nashville, TN 37214",
+          "image": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2018/04/17/105138069-941125838.600x400.jpg?v=1523991965",
+          "time": "Morning"
+      },
+      {
+        "name": "The Mall",
+        "address": "300 Park Drive, Nashville, TN 37215",
+        "image": "http://streetfightmag.com/wp-content/uploads/2873535879_392d9fea9a_o.jpg",
+        "time": "Afternoon"
+      },
+      {
+        "name": "Nail Salon",
+        "address": "5678 Gallatin Avenue, Nashville, TN 37214",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDZc983-a8kP_04GigpZjH4RI9it59mtkgMcfnqAF-CDJOOyWa5w",
+        "time": "Evening"
+      },
+      {
+        "name": "Butchertown Hall",
+        "address": "500 Germantown Ave, Nashville, TN 37218",
+        "image": "http://nashvilleguru.com/officialwebsite/wp-content/uploads/2013/10/Germantown-May-2015-63-1024x683.jpg",
+        "time": "Evening"
+      },
+      {
+        "name": "Rosemary",
+        "address": "167 Eastland Avenue, Nashville, TN 37211",
+        "image": "http://nashvilleguru.com/officialwebsite/wp-content/uploads/2017/09/Rosemary-Beauty-Queen-Nashville-1.jpg",
+        "time": "After Dark"
+      },
+      {
+        "name": "Portland Brew",
+        "address": "890 Five Point Ave, Nashville, TN 37213",
+        "image": "http://nashvilleguru.com/officialwebsite/wp-content/uploads/2011/07/East-Nashville-Neighborhood-202.jpg",
+        "time": "Morning"
+      }
+  ]
+}
