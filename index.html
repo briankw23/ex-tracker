@@ -9,9 +9,25 @@
   <link rel="stylesheet" href="./styles/main.css" >
 </head>
 <body>
-
+<div class="container-fluid">
+<div class="page-header">
+<h1 >Ex-Tracker</h1>
 </div>
 
+<div class="row">
+<input type="text" class="form-control col-md-6" id="searc" placeholder="Search Locations">
+</div>
+
+<button id="morning" class="btn btn-default" type="submit">Morning</button>
+<button id="afternoon" class="btn btn-default" type="submit">Afternoon</button>
+<button id="evening" class="btn btn-default" type="submit">Evening</button>
+<button id="dark" class="btn btn-default" type="submit">After Dark</button>
+
+<div class="row">
+<div class="col-md-4" id="ex"></div>
+<div class="col-md-8" id="locations"></div>
+</div>
+</div>
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

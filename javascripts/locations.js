@@ -1,4 +1,3 @@
-
 const loadLocations = (successFunction, errorFunction) => {
   $.get('../db/locations.json')
     .done(successFunction)
