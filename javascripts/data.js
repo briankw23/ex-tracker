@@ -14,6 +14,7 @@ const successLocations = (data) => {
   console.log('locations', data.locations);
   $('#locations').append(domStringLocation(data.locations));
   locations = data.locations;
+  searchBar(locations);
 };
 
 const failLocations = () => {
@@ -23,6 +24,7 @@ const failLocations = () => {
 const successEx = (data) => {
   console.log('ex', data.ex);
   $('#ex').append(domString(data.ex[0]));
+  searchBar(locations);
 };
 
 const failEx = () => {
@@ -32,7 +34,7 @@ const failEx = () => {
 const initializer = () => {
   loadEx(successEx,failEx);
   loadLocations(successLocations,failLocations);
-  searchBar(getLocations());
+
 };
 
 module.exports = {
