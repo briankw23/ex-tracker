@@ -1,4 +1,3 @@
-
 const loadEx = (successFunction, errorFunction) => {
   $.get('../db/ex.json')
     .done(successFunction)
