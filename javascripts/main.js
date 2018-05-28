@@ -1,3 +1,8 @@
-const data = require('./data');
+// const data = require('./data');
 
-data.initializer();
+// data.initializer();
+const recieveLocation = require('./locations');
+const recieveEx = require('./ex');
+
+recieveLocation();
+recieveEx();
