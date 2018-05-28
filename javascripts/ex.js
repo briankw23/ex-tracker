@@ -1,4 +1,5 @@
 const data = require('./data');
+const dom = require('./dom');
 
 const requestEx = () => {
   return new Promise((resolve, reject) => {
@@ -16,7 +17,8 @@ const recieveEX = () => {
   requestEx()
     .then((results) => {
       console.log('EXs', results.ex);
-      data.getExs(results.ex);
+      data.setExs(results.ex);
+      $('#ex').html(dom.stringBuilderExs(results.ex));
     })
     .catch((error) => {
       console.error('error', error);
@@ -24,11 +26,3 @@ const recieveEX = () => {
 };
 
 module.exports = recieveEX;
-
-// const loadEx = (successFunction, errorFunction) => {
-//   $.get('../db/ex.json')
-//     .done(successFunction)
-//     .fail(errorFunction);
-// };
-
-// module.exports = loadEx;

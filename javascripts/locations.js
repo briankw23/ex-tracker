@@ -5,6 +5,7 @@
 // };
 
 const data = require('./data');
+const dom = require('./dom');
 
 const requestLocation = () => {
   return new Promise((resolve, reject) => {
@@ -23,6 +24,7 @@ const recieveLocation = () => {
     .then((results) => {
       console.log('locations',results.locations);
       data.setLocations(results.locations);
+      $('#locations').html(dom.stringBuilderLocations(results.locations));
     })
     .catch((error) => {
       console.error('error', error);
