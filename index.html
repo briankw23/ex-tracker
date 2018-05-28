@@ -9,9 +9,31 @@
   <link rel="stylesheet" href="./styles/main.css" >
 </head>
 <body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <h1 >Ex-Tracker</h1>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+            <form class="navbar-form navbar-right">
+              <div class="form-group">
+                  <input type="text" id="search" placeholder="Search Locations">
+              </div>
+              <button id="morning" class="btn btn-default" type="submit">Morning</button>
+              <button id="afternoon" class="btn btn-default" type="submit">Afternoon</button>
+              <button id="evening" class="btn btn-default" type="submit">Evening</button>
+              <button id="dark" class="btn btn-default" type="submit">After Dark</button>
+            </form>
+        </div><!-- /.container-fluid -->
+      </nav>
+<div class="container-fluid">
 
+<div class="row">
+<div class="col-md-4" id="ex"></div>
+<div class="col-md-8" id="locations"></div>
 </div>
-
+</div>
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
