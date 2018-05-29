@@ -16,7 +16,7 @@ const searchBar = () => {
 };
 
 const searchResults = (input) => {
-  // let domString = '';
+  let domString = '';
   for (let i = 0; i < locations.length; i++) {
     if (locations[i].name.includes(input)) {
       console.log(locations[i].name);
