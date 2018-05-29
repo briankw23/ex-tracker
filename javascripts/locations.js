@@ -1,5 +1,6 @@
 const data = require('./data');
 const dom = require('./dom');
+const search = require('./searchEvent');
 
 const requestLocation = () => {
   return new Promise((resolve, reject) => {
@@ -16,9 +17,9 @@ const requestLocation = () => {
 const recieveLocation = () => {
   requestLocation()
     .then((results) => {
-      console.log('locations',results.locations);
       data.setLocations(results.locations);
       $('#locations').html(dom.stringBuilderLocations(results.locations));
+      search();
     })
     .catch((error) => {
       console.error('error', error);

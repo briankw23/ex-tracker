@@ -1,33 +1,28 @@
-// // const data = require('./data');
+const data = require('./data');
 
-// let locations = {};
+let locations = {};
+let exs = {};
 
-// const searchBar = (data) => {
-//   $('#search').keypress((e) => {
-//     console.log(e);
-//     const input = $('#search').val();
-//     console.log('$', input);
-//     console.log('event value', e.target.value);
-//     locations = data;
-//     console.log(locations);
-//     searchResults(input);
-//   });
-// };
+const searchBar = () => {
+  locations = data.getLocations();
+  exs = data.getExs();
+  $('#search').keypress((e) => {
+    console.log(e);
+    const input = $('#search').val();
+    console.log(locations);
+    console.log(exs);
+    searchResults(input);
+  });
+};
 
-// const searchResults = (input) => {
-//   let domString = '';
-//   for (let i = 0; i < locations.length; i++) {
-//     const lolo = locations[i].title;
-//     const addy = locations[i].address;
-//     if (lolo.search(input) >= 1) {
-//       domString += locations[i].title;
-//     }
-//     else if (addy.search(input) >= 1) {
-//       domString += locations[i].address;
-//     };
-//   };
-//   console.log('search match', domString);
-//   // return domString;
-// };
+const searchResults = (input) => {
+  // let domString = '';
+  for (let i = 0; i < locations.length; i++) {
+    if (locations[i].name.includes(input)) {
+      console.log(locations[i].name);
+    }
+  };
+  // return domString;
+};
 
-// module.exports = searchBar;
+module.exports = searchBar;
