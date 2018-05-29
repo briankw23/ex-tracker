@@ -4,77 +4,88 @@
           "name": "Starbucks",
           "address": "1 Terminal Dr #325, Nashville, TN 37214",
           "image": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2018/04/17/105138069-941125838.600x400.jpg?v=1523991965",
-          "time": "Morning"
+          "time": "Morning",
+          "idEx": 0
       },
       {
         "id": 2,
         "name": "The Mall",
         "address": "300 Park Drive, Nashville, TN 37215",
         "image": "http://streetfightmag.com/wp-content/uploads/2873535879_392d9fea9a_o.jpg",
-        "time": "Afternoon"
+        "time": "Afternoon",
+        "idEx": 1
       },
       {
         "id": 3,
         "name": "Nail Salon",
         "address": "5678 Gallatin Avenue, Nashville, TN 37214",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDZc983-a8kP_04GigpZjH4RI9it59mtkgMcfnqAF-CDJOOyWa5w",
-        "time": "Evening"
+        "time": "Evening",
+        "idEx": 2
       },
       {
         "id": 4,
         "name": "Butchertown Hall",
         "address": "500 Germantown Ave, Nashville, TN 37218",
         "image": "http://nashvilleguru.com/officialwebsite/wp-content/uploads/2013/10/Germantown-May-2015-63-1024x683.jpg",
-        "time": "Evening"
+        "time": "Evening",
+        "idEx": 0
       },
       {
         "id": 5,
         "name": "Rosemary",
         "address": "167 Eastland Avenue, Nashville, TN 37211",
         "image": "http://nashvilleguru.com/officialwebsite/wp-content/uploads/2017/09/Rosemary-Beauty-Queen-Nashville-1.jpg",
-        "time": "After Dark"
+        "time": "After Dark",
+        "idEx": 1
       },
       {
         "id": 6,
         "name": "Portland Brew",
         "address": "890 Five Point Ave, Nashville, TN 37213",
         "image": "http://nashvilleguru.com/officialwebsite/wp-content/uploads/2011/07/East-Nashville-Neighborhood-202.jpg",
-        "time": "Morning"
+        "time": "Morning",
+        "idEx": 2
       },
       {
         "id": 7,
         "name": "Lipscomb Universoty",
         "address": "101 Grannywhite Pike, Nashville, TN 37213",
         "image": "https://www.lipscomb.edu/uploads/92794.jpg",
-        "time": "Morning"
+        "time": "Morning",
+        "idEx": 0
       },
       {
         "id": 8,
         "name": "Chuck E. Cheese's",
         "address": "12 Interste Drive, Nashville, TN 37213",
         "image": "http://www.siliconbeat.com/wp-content/uploads/2017/08/08286014.jpg",
-        "time": "Afternoon"
+        "time": "Afternoon",
+        "idEx": 1
       },
       {
         "id": 9,
         "name": "McDonald's",
         "address": "111 Everywhere Street, Nashville, TN 37213",
         "image": "https://www.mcdonalds.com/content/dam/usa/documents/careers/workingatmcd.jpg",
-        "time": "Afternoon"
+        "time": "Afternoon",
+        "idEx": 2
       },
       {
         "id": 10,
         "name": "Putt Putt Golf",
         "address": "333 Golf Center Lane, Nashville, TN 37213",
         "image": "https://media-cdn.tripadvisor.com/media/photo-s/02/cf/16/57/grand-old-golf-games.jpg",
-        "time": "After Dark"
+        "time": "After Dark",
+        "idEx": 0
       },
       {
         "id": 11,
         "name": "Bridgestone Arena",
         "address": "555 Broadway Ave, Nashville, TN 37213",
         "image": "https://arenanetwork.net/wp-content/uploads/2011/07/bridgestone.jpg",
-        "time": "After Dark"
+        "time": "After Dark",
+        "idEx": 1
       }
   ]
 }
