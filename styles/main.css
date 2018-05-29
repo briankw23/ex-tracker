@@ -1,4 +1,12 @@
 .locPic{
+  height: 250px;
+  width: 100%;
+}
+.exPic{
   height: 25%;
   width: 25%;
+}
+.small{
+  height: 60px;
+  width: 60px;
 }

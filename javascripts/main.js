@@ -1,8 +1,7 @@
-// const data = require('./data');
-
-// data.initializer();
+const button = require('./buttons');
 const recieveLocation = require('./locations');
 const recieveEx = require('./ex');
 
-recieveLocation();
+button.buttonEvent();
 recieveEx();
+recieveLocation();

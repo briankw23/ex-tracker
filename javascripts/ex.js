@@ -1,5 +1,6 @@
 const data = require('./data');
 const dom = require('./dom');
+const button = require('./buttons');
 
 const requestEx = () => {
   return new Promise((resolve, reject) => {
@@ -19,6 +20,7 @@ const recieveEX = () => {
       console.log('EXs', results.ex);
       data.setExs(results.ex);
       $('#ex').html(dom.stringBuilderExs(results.ex));
+      button.exClick();
     })
     .catch((error) => {
       console.error('error', error);
