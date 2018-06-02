@@ -1,6 +1,7 @@
 const data = require('./data');
 const dom = require('./dom');
 const button = require('./buttons');
+const search = require('./searchEvent');
 
 const requestEx = () => {
   return new Promise((resolve, reject) => {
@@ -17,10 +18,10 @@ const requestEx = () => {
 const recieveEX = () => {
   requestEx()
     .then((results) => {
-      console.log('EXs', results.ex);
       data.setExs(results.ex);
       $('#ex').html(dom.stringBuilderExs(results.ex));
       button.exClick();
+      search();
     })
     .catch((error) => {
       console.error('error', error);

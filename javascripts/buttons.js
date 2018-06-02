@@ -5,21 +5,17 @@ let exs = {};
 
 const buttonEvent = () => {
   $('.btn').click((e) => {
-    console.log(e);
     buttonDom(e);
   });
 };
 const exClick = () => {
   $('.gf').click((e) => {
-    console.log('ex is clicked', e);
     exDom(e);
   });
 };
 const exDom = (e) => {
   locations = data.getLocations();
   exs = data.getExs();
-  console.log('button lolo',locations);
-  console.log('but exs', exs);
   const button = e.target.id;
   let domString = '';
   for (let j = 0; j < exs.length; j++) {
@@ -55,46 +51,9 @@ const exDom = (e) => {
   printToDom(domString);
 };
 
-// const exDom = (e) => {
-
-//   for (let j = 0; j < exs.length; j++) {
-//     if (parseInt(button) === exs[j].id) {
-//       domString += `<div class="rows">`;
-//       domString += `<div class="col-md-3">`;
-//       domString += `<div class="thumbnail">`;
-//       domString += `<img class="img-responsive locPic" src="${locations[i].image}" alt="...">`;
-//       domString += `<div class="caption">`;
-//       domString += `<h3 class="text-center">${locations[i].name}</h3>`;
-//       domString += `<p class="text-center">${locations[i].address}</p>`;
-//       domString += `<p class="text-center">${locations[i].time}</p>`;
-//       domString += `</div>`;
-//       domString += `</div>`;
-//       domString += `</div>`;
-//     }
-//     // for (let i = 0; i < locations.length; i++) {
-//     //   if (parseInt(button) === locations[i].idEx) {
-//         domString += `<div class="rows">`;
-//         domString += `<div class="col-md-3">`;
-//         domString += `<div class="thumbnail">`;
-//         domString += `<img class="img-responsive locPic" src="${locations[i].image}" alt="...">`;
-//         domString += `<div class="caption">`;
-//         domString += `<h3 class="text-center">${locations[i].name}</h3>`;
-//         domString += `<p class="text-center">${locations[i].address}</p>`;
-//         domString += `<p class="text-center">${locations[i].time}</p>`;
-//         domString += `</div>`;
-//         domString += `</div>`;
-//         domString += `</div>`;
-//     //   }
-//     // }
-//   }
-//   printToDom(domString);
-// };
-
 const buttonDom = (e) => {
   locations = data.getLocations();
   exs = data.getExs();
-  console.log('button lolo',locations);
-  console.log('but exs', exs);
   const button = e.target.id;
   let domString = '';
   for (let i = 0; i < locations.length; i++) {
@@ -116,7 +75,6 @@ const buttonDom = (e) => {
       domString += `</div>`;
       domString += `</div>`;
     }
-    console.log(domString);
   }
   printToDom(domString);
 };
